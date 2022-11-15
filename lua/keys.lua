@@ -16,3 +16,7 @@ map('n', 'tl', [[:IndentLinesToggle]], {})
 map('n', '<F5>', [[:tabnew<CR>:terminal<CR>A]], {})
 map('n', '<F6>', [[:let $VIM_DIR=expand('%:p:h')<CR>:tabnew<CR>:terminal<CR>Acd $VIM_DIR<CR>]], {})
 map('t', '<Esc>', [[<C-\><C-n>]], {})
+
+-- Append , ;
+map('n', ',', [[A,<esc>]], {})
+map('n', ';', [[A;<esc>:w<CR>]], {})
